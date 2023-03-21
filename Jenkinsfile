@@ -14,7 +14,7 @@ pipeline {
                 }
             }
             steps {
-                sh "if test -f Makefile; then make re"
+                sh "if test -f Makefile; then make re; fi"
                 sh "test -f $BINARY_NAME"
             }
         }
