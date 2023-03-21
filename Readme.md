@@ -1,16 +1,15 @@
-# B-PSU-200-Minishell1 - Unit Tests
+# B-MATH-200-107transfer - Unit Tests
 
-Any tests for minishell 1 Epitech Project
+Any tests for 107transfer Epitech Project
 
-These tests are written in bash thanks to the epitech original tester.tgz
-
+These tests are written in YAML and runned with [BinaryTester](https://github.com/Epitests-unofficial/BinaryTester.git)
 
 #### Tests Running
 
 * Clone this repo
-* `make`
-* Copy your `mysh` binary at the root of the repo
-* run `./tester.sh`
+* Install [BinaryTester](https://github.com/Epitests-unofficial/BinaryTester.git)
+* Go to your project directory and copy test.yaml in your repo
+* run `binaryTester test.yaml`
 
 #### Jenkins Pipeline
 

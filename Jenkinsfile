@@ -35,7 +35,10 @@ pipeline {
         }
         stage ("BinaryTester Tests") {
             agent {
-                docker { image "epitechcontent/epitest-docker", args "-v /tmp/binarytester:/tmp/binarytester" }
+                docker { 
+                    image "epitechcontent/epitest-docker"
+                    args "-v /tmp/binarytester:/tmp/binarytester"
+                    }
             }
             steps {
                 sh "git clone $TEST_REPO /tmp/tests"
